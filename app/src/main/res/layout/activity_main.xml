@@ -1,26 +1,11 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="16dp">
 
-    <EditText
-        android:id="@+id/postDataEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Post Data" />
 
-    <Button
-        android:id="@+id/postButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Send POST Request" />
 
-    <Button
-        android:id="@+id/getButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Send GET Request" />
 
     <TextView
         android:id="@+id/profileResultTextView"
@@ -34,8 +19,9 @@
         android:id="@+id/postResultTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/profileResultTextView"
         android:layout_marginTop="16dp"
         android:text="Post Result:"
         android:textStyle="bold" />
 
-</LinearLayout>
+</RelativeLayout>
